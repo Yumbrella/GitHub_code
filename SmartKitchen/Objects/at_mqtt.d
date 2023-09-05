@@ -1,0 +1,17 @@
+.\objects\at_mqtt.o: MQTT\AT_MQTT.c
+.\objects\at_mqtt.o: .\MQTT\inc\AT_MQTT.h
+.\objects\at_mqtt.o: .\MQTT\inc\AT_command.h
+.\objects\at_mqtt.o: .\FreeRTOS\include\FreeRTOS.h
+.\objects\at_mqtt.o: E:\apps\Keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\at_mqtt.o: E:\apps\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\at_mqtt.o: .\FreeRTOS\include\FreeRTOSConfig.h
+.\objects\at_mqtt.o: .\FreeRTOS\include\projdefs.h
+.\objects\at_mqtt.o: .\FreeRTOS\include\portable.h
+.\objects\at_mqtt.o: .\FreeRTOS\include\deprecated_definitions.h
+.\objects\at_mqtt.o: .\FreeRTOS\portable\RVDS\ARM_CM3\portmacro.h
+.\objects\at_mqtt.o: .\FreeRTOS\include\mpu_wrappers.h
+.\objects\at_mqtt.o: .\FreeRTOS\include\semphr.h
+.\objects\at_mqtt.o: .\FreeRTOS\include\queue.h
+.\objects\at_mqtt.o: .\FreeRTOS\include\task.h
+.\objects\at_mqtt.o: .\FreeRTOS\include\list.h
+.\objects\at_mqtt.o: E:\apps\Keil5\ARM\ARMCC\Bin\..\include\string.h
