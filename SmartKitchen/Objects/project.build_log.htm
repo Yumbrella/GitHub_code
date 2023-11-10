@@ -21,13 +21,210 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
 Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
-D:\SourSightProject\ºÏ≤‚œµÕ≥\SmartKitchen\SmartKitchen\project.uvprojx
-Project File Date:  04/19/2023
+D:\GitHubhouse\DetectingSystem\SmartKitchen\project.uvprojx
+Project File Date:  11/02/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'E:\apps\Keil5\ARM\ARMCC\Bin'
-Build target 'Target 1'
-".\Objects\project.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_md.s...
+compiling stm32f10x_dbgmcu.c...
+compiling core_cm3.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_cec.c...
+compiling misc.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_wwdg.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_it.c...
+compiling stm32f10x_tim.c...
+compiling serial.c...
+.\Hardware\inc\serial.h(4): warning:  #1295-D: Deprecated declaration Serial_Init - give arg types
+  void Serial_Init();
+Hardware\serial.c(12): warning:  #177-D: variable "NVIC_InitStructure"  was declared but never referenced
+  	NVIC_InitTypeDef NVIC_InitStructure;
+Hardware\serial.c(62): warning:  #177-D: variable "i"  was declared but never referenced
+  	static int i=0;
+Hardware\serial.c: 3 warnings, 0 errors
+compiling main.c...
+.\Hardware\inc\serial.h(4): warning:  #1295-D: Deprecated declaration Serial_Init - give arg types
+  void Serial_Init();
+.\Software\inc\buffer.h(17): warning:  #1295-D: Deprecated declaration Buffer_Init - give arg types
+  void Buffer_Init();
+.\Software\inc\buffer.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\MQTT\inc\AT_command.h(9): warning:  #1295-D: Deprecated declaration AT_Init - give arg types
+  void AT_Init();
+.\Hardware\inc\myusart2.h(4): warning:  #1295-D: Deprecated declaration MyUSAT2_Init - give arg types
+  void MyUSAT2_Init();
+.\Hardware\inc\myusart2.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\MQTT\inc\AT_connect.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\MQTT\inc\AT_MQTT.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\Software\inc\OLEDShow.h(5): warning:  #1295-D: Deprecated declaration OLED_ShowDecName - give arg types
+  void OLED_ShowDecName();
+.\Software\inc\OLEDShow.h(6): warning:  #1295-D: Deprecated declaration OLED_ShowDeveloperName - give arg types
+  void OLED_ShowDeveloperName();
+.\Software\inc\OLEDShow.h(7): warning:  #1295-D: Deprecated declaration OLED_ShowInterConnecting - give arg types
+  void OLED_ShowInterConnecting();
+.\Software\inc\OLEDShow.h(8): warning:  #1295-D: Deprecated declaration OLED_ShowConnectOK - give arg types
+  void OLED_ShowConnectOK();
+.\Software\inc\OLEDShow.h(15): warning:  #1295-D: Deprecated declaration Show_WarningFire - give arg types
+  void Show_WarningFire();
+.\Hardware\inc\Buzzer.h(5): warning:  #1295-D: Deprecated declaration Buzzer_Init - give arg types
+  void Buzzer_Init();
+.\Hardware\inc\Buzzer.h(6): warning:  #1295-D: Deprecated declaration Buzzer_On - give arg types
+  void Buzzer_On();
+.\Hardware\inc\Buzzer.h(7): warning:  #1295-D: Deprecated declaration Buzzer_OFF - give arg types
+  void Buzzer_OFF();
+.\Hardware\inc\LED.h(5): warning:  #1295-D: Deprecated declaration LED1_ON - give arg types
+  void LED1_ON();
+.\Hardware\inc\LED.h(6): warning:  #1295-D: Deprecated declaration LED1_OFF - give arg types
+  void LED1_OFF();
+main\main.c(82): warning:  #174-D: expression has no effect
+  	
+dMS_TO_TICKS(500);
+main\main.c(156): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i;
+main\main.c(187): warning:  #177-D: variable "minute"  was declared but never referenced
+  	uint8_t minute;
+main\main.c(188): warning:  #177-D: variable "hour"  was declared but never referenced
+  	uint8_t hour;
+main\main.c(257): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		}else if(page>=0&&page<2)
+main\main.c(273): warning:  #223-D: function "Key_Init" declared implicitly
+  	Key_Init();
+main\main.c(292): warning:  #167-D: argument of type "void (*)()" is incompatible with parameter of type "TaskFunction_t"
+  	xTaskCreate(MyTimeTask,"",10,"",1,
+ULL);
+main\main.c(305): warning:  #68-D: integer conversion resulted in a change of sign
+  		buffer_Data_Read(&myRecStr[i],
+ortMAX_DELAY);
+main\main.c: 26 warnings, 0 errors
+compiling myusart2.c...
+.\Hardware\inc\myusart2.h(4): warning:  #1295-D: Deprecated declaration MyUSAT2_Init - give arg types
+  void MyUSAT2_Init();
+.\Hardware\inc\myusart2.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+Hardware\myusart2.c: 2 warnings, 0 errors
+compiling Delay.c...
+compiling DHT11.c...
+compiling OLED.c...
+compiling buffer.c...
+.\Software\inc\buffer.h(17): warning:  #1295-D: Deprecated declaration Buffer_Init - give arg types
+  void Buffer_Init();
+.\Software\inc\buffer.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+Software\buffer.c: 2 warnings, 0 errors
+compiling buffer_RTOS.c...
+.\Software\inc\buffer.h(17): warning:  #1295-D: Deprecated declaration Buffer_Init - give arg types
+  void Buffer_Init();
+.\Software\inc\buffer.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+Software\buffer_RTOS.c: 2 warnings, 0 errors
+compiling croutine.c...
+compiling event_groups.c...
+compiling AD.c...
+compiling list.c...
+compiling Key.c...
+.\Hardware\inc\Key.h(4): warning:  #1295-D: Deprecated declaration Key_Init - give arg types
+  void Key_Init();
+Hardware\Key.c: 1 warning, 0 errors
+compiling Buzzer.c...
+.\Hardware\inc\Buzzer.h(5): warning:  #1295-D: Deprecated declaration Buzzer_Init - give arg types
+  void Buzzer_Init();
+.\Hardware\inc\Buzzer.h(6): warning:  #1295-D: Deprecated declaration Buzzer_On - give arg types
+  void Buzzer_On();
+.\Hardware\inc\Buzzer.h(7): warning:  #1295-D: Deprecated declaration Buzzer_OFF - give arg types
+  void Buzzer_OFF();
+Hardware\Buzzer.c(24): warning:  #1-D: last line of file ends without a newline
+  }
+Hardware\Buzzer.c: 4 warnings, 0 errors
+compiling LED.c...
+.\Hardware\inc\LED.h(5): warning:  #1295-D: Deprecated declaration LED1_ON - give arg types
+  void LED1_ON();
+.\Hardware\inc\LED.h(6): warning:  #1295-D: Deprecated declaration LED1_OFF - give arg types
+  void LED1_OFF();
+Hardware\LED.c: 2 warnings, 0 errors
+compiling OLED_Show.c...
+.\Software\inc\OLEDShow.h(5): warning:  #1295-D: Deprecated declaration OLED_ShowDecName - give arg types
+  void OLED_ShowDecName();
+.\Software\inc\OLEDShow.h(6): warning:  #1295-D: Deprecated declaration OLED_ShowDeveloperName - give arg types
+  void OLED_ShowDeveloperName();
+.\Software\inc\OLEDShow.h(7): warning:  #1295-D: Deprecated declaration OLED_ShowInterConnecting - give arg types
+  void OLED_ShowInterConnecting();
+.\Software\inc\OLEDShow.h(8): warning:  #1295-D: Deprecated declaration OLED_ShowConnectOK - give arg types
+  void OLED_ShowConnectOK();
+.\Software\inc\OLEDShow.h(15): warning:  #1295-D: Deprecated declaration Show_WarningFire - give arg types
+  void Show_WarningFire();
+Software\OLED_Show.c: 5 warnings, 0 errors
+compiling queue.c...
+compiling heap_4.c...
+compiling timers.c...
+compiling AT_command.c...
+.\MQTT\inc\AT_command.h(9): warning:  #1295-D: Deprecated declaration AT_Init - give arg types
+  void AT_Init();
+.\Hardware\inc\serial.h(4): warning:  #1295-D: Deprecated declaration Serial_Init - give arg types
+  void Serial_Init();
+.\Software\inc\buffer.h(17): warning:  #1295-D: Deprecated declaration Buffer_Init - give arg types
+  void Buffer_Init();
+.\Software\inc\buffer.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+MQTT\AT_command.c(80): warning:  #68-D: integer conversion resulted in a change of sign
+  		buffer_OS_Read(&s[i],
+ortMAX_DELAY);
+MQTT\AT_command.c(97): warning:  #68-D: integer conversion resulted in a change of sign
+  		buffer_OS_Read(&s[i], 
+ortMAX_DELAY);
+MQTT\AT_command.c(122): warning:  #68-D: integer conversion resulted in a change of sign
+  		buffer_OS_Read(&rbuf[i],
+ortMAX_DELAY);
+MQTT\AT_command.c: 7 warnings, 0 errors
+compiling port.c...
+compiling AT_connect.c...
+.\MQTT\inc\AT_connect.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\MQTT\inc\AT_command.h(9): warning:  #1295-D: Deprecated declaration AT_Init - give arg types
+  void AT_Init();
+MQTT\AT_connect.c(52): warning:  #1-D: last line of file ends without a newline
+  }
+MQTT\AT_connect.c: 3 warnings, 0 errors
+compiling AT_MQTT.c...
+.\MQTT\inc\AT_MQTT.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\MQTT\inc\AT_command.h(9): warning:  #1295-D: Deprecated declaration AT_Init - give arg types
+  void AT_Init();
+MQTT\AT_MQTT.c(15): warning:  #940-D: missing return statement at end of non-void function "Subscribe" 
+  }
+MQTT\AT_MQTT.c(9): warning:  #177-D: variable "ret"  was declared but never referenced
+  	int ret;
+MQTT\AT_MQTT.c(28): warning:  #940-D: missing return statement at end of non-void function "PushTheme" 
+  }
+MQTT\AT_MQTT.c(21): warning:  #177-D: variable "ret"  was declared but never referenced
+  	int ret;
+MQTT\AT_MQTT.c: 6 warnings, 0 errors
+compiling tasks.c...
+linking...
+Program Size: Code=19384 RO-data=3484 RW-data=300 ZI-data=14684  
+".\Objects\project.axf" - 0 Error(s), 63 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -41,7 +238,7 @@ Package Vendor: Keil
   E:\apps\Keil5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>
